@@ -23,10 +23,10 @@ BlinkyDancer.prototype.step = function(){
   this.$node.toggle();
 };
 
-BlinkyDancer.prototype.setPosition = function(top, left){
-  var styleSettings = {
-    top: top,
-    left: left
-  };
-  this.$node.css(styleSettings);
-};
+// BlinkyDancer.prototype.setPosition = function(top, left){
+//   var styleSettings = {
+//     top: top,
+//     left: left
+//   };
+//   this.$node.css(styleSettings);
+// };
