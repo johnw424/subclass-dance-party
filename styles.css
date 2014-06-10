@@ -3,7 +3,10 @@ body, html{
 }
 body{
   margin: 0px;
-  background-color:#444;
+  background-color: black;
+  background-image: url("src/wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
   font-size: 18px;
 }
 body, a:link, a:visited, a:active{
@@ -25,3 +28,4 @@ body, a:link, a:visited, a:active{
   border-radius:10px;
   position:absolute;
 }
+
