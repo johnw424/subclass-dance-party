@@ -20,13 +20,28 @@ BlinkyDancer.prototype.oldStep = Dancer.prototype.step;
 // create prototype step method
 BlinkyDancer.prototype.step = function(){
   this.oldStep();
-  this.$node.toggle();
+
+  this.$node.fadeToggle();
 };
 
-// BlinkyDancer.prototype.setPosition = function(top, left){
-//   var styleSettings = {
-//     top: top,
-//     left: left
-//   };
-//   this.$node.css(styleSettings);
-// };
+BlinkyDancer.prototype.setPosition = function(top, left){
+  var styleSettings = {
+    top: top,
+    left: left,
+    border: "0px"
+  };
+  this.$node.css(styleSettings);
+
+  var $imageNode = $('<img src="http://4.bp.blogspot.com/-eWIfLcLqyIA/TadDjZfjjCI/AAAAAAAAAVk/_Em2J4-UZaM/s1600/FistPump.jpg" />');
+
+  // package style for image node
+  var imgStyleSettings = {
+
+  };
+
+  //apply style to image node
+  $imageNode.css(imgStyleSettings);
+
+  // prepend image node as child of node container
+  this.$node.prepend($imageNode);
+};

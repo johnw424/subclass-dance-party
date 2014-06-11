@@ -1,6 +1,12 @@
 // create new instantiator function
 var BreakDancer = function(top, left, timeBetweenSteps){
-
+  // //store timeBetweenSteps in a pseudo-private property
+  // this._timeBetweenSteps = timeBetweenSteps;
+  // // create a dancer blank node
+  // this.$node = $('<span class="dancer"></span>');
+  // // call methods, passing in args (.step and .setPosition)
+  // this.oldStep();
+  // this.setPosition(top, left);
   Dancer.apply(this, arguments);
 };
 
